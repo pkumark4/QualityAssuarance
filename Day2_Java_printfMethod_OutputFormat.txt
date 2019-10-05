@@ -1,0 +1,33 @@
+Formatting with printf() in Java
+---------------------------------
+ Printf() method is part of the java.io.PrintStream class and provides String formatting similar to the printf() function in C.
+
+
+Syntax:
+
+System.out.printf(format, arguments);
+System.out.printf(locale, format, arguments);
+
+we use % character for formatting
+
+examples:
+%s – formats strings
+%d – formats decimal integers
+%f – formats the floating-point numbers
+%t– formats date/time values
+%n - formats new line character
+%c - char format
+
+
+string formatting
+
+printf("'%s' %n", "baeldung");    //'baeldung' 
+printf("'%S' %n", "baeldung");    //'BAELDUNG'
+printf("'%15s' %n", "baeldung");  // '       baeldung'
+System.out.printf("'%5.2s'", "Hi there!");  // '     Hi'.     (The first ‘x' number spaces in %x.ys syntax is the padding. ‘y' is the number of chars)
+
+System.out.printf("%f%n", 5.1473);  // 5.147300
+
+Date date = new Date();
+System.out.printf("%tT%n", date);   //13:51:15
+System.out.printf("hours %tH: minutes %tM: seconds %tS%n", date, date, date);    //hours 13: minutes 51: seconds 15
