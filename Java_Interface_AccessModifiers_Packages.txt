@@ -1,0 +1,30 @@
+
+Interfaces
+--------------------
+An interface in java is a blueprint of class
+Interface contains final and static variables
+Interface contains abstract methods
+An abstract method is a method contains definition but not body
+Methods in interface are public by default
+Interface supports the functionality of multiple inheritance.
+we can define interface with interface keyword
+A class extends another class, an Interface extends another Interface but a class implements an interface
+We can create object reference for Interface but we cannot instantiate interface
+Using interface, we can achieve multiple inheritence. As per java syntax, implements keyword supports multiple interfacess. but extends keyword doesn't support multiple classes.
+
+
+Access Modifier's
+---------------------
+public    -> public are accessible from every where in the program
+default   -> default access modifier are accessible only within the same package.
+protected -> protected are accessible within same package or sub classes in different package though inheritence. 
+private   -> private are accessible only within the class in which they are declared
+
+
+Packages
+---------------------
+Package is collection of files (Classes/interfaces/any other files)
+create sub package. new package -> name as Pack1\.pack2 (pack1/pack2/test.java)
+Two types of packates:
+1. user defined packages
+2. built-in packages
