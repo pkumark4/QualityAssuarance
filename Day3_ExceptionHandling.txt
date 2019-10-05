@@ -1,0 +1,93 @@
+
+Exception Handling
+------------------------
+Exception is an abnormal condition.
+In java, exception is an event that dsrupts the normal flow of program
+
+Types of Exceptions
+------------------------
+1) checked  -> Exceptions checked/identified by the complier (design time)
+
+Examples:
+InterruptedException
+IOException
+FileNotFoundException etc.
+
+2) unchecked -> Exceptions which are not checked/identified by the complier (Run time)
+
+Examples:
+ArithmeticException
+NullPointerException
+NumberFormatException
+ArrayIndexOutOfBoundsException
+
+
+Handling Exceptions 
+----------------------
+Syntax:
+
+try 
+ {
+   statements;
+ }
+
+catch(Exception Type)
+ {
+   statements
+ }
+
+try block always followed by catch block.
+one Try block can have multiple catch blocks.
+
+Syntax2:
+
+try 
+ {
+   statements;
+ }
+
+catch(Exception Type)
+ {
+   statements
+ }
+
+finally  //this block will execute always. 
+{
+
+}
+
+finalyly block executes always in all below cases.
+1.Exception doesn't occur
+2.Exceptoin occurs and not handled
+3.Exception occurs and handled.
+
+Unchecked exceptions can be handled only by try..catch block
+
+Checked exceptions can be handled in 2 ways
+-------------------
+1)try..catch // statement level
+2)throws keyword //method level
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
