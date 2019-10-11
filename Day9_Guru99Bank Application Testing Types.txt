@@ -1,0 +1,28 @@
+
+Gur99 Bank Project:
+--------------------
+
+Functionality Testing   -> Account (Change password, logout, login and new)
+		        -> Deposit
+		        -> Withdrawal
+			-> Balance
+			-> Enguiry
+			-> Funds Transfer
+
+Usability Testing       -> User Freindly
+			-> clear contents
+
+Security Testing 	-> Account Protecion
+			-> Authorize access
+
+Performance Testing 	-> Load Test
+			-> Stress Test
+
+UI Testing		-> Web Elements(buttons, menu, images and Text)
+			-> Website Layout (HTML/CSS and links)
+
+Compatible Testing 	-> Compatible with all platforms
+
+Hardware Testing	-> Web Server
+			-> Database Server
+			-> Mail Server
