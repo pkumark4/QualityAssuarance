@@ -130,44 +130,18 @@ Building a Series of Multiple Actions:
 		.build();
 	
 	seriesOfActions.perform() ;
+	
+Actions vs Action:
+------------------
 
+Actions is a class which is based on builder design pattern.  This is a user-facing API for emulating complex user gestures. 
+Whereas Action is an Interface which represents a single user-interaction action. It contains one of the most widely used methods perform(). 
+
+It is defined in org.openqa.selenium.interactions. 
 
 
 Summary :
 ---------
 	Handling special keyboard and mouse events are done using the AdvancedUserInteractions API.
 	Frequently used Keyword and Mouse Events are doubleClick(), keyUp, dragAndDropBy, contextClick & sendKeys.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
