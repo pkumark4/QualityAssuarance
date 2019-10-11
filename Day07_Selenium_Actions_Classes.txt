@@ -1,0 +1,173 @@
+
+Mouse Click & Keyboard Event: Action Class in Selenium Webdriver
+----------------------------------------------------------------
+
+Handling Keyboard & Mouse Events:
+---------------------------------
+
+Handling special keyboard and mouse events are done using the Advanced User Interactions API. 
+
+It contains the Actions and the Action classes that are needed when executing these events.
+
+
+
+clickAndHold()
+--------------
+	Clicks (without releasing) at the current mouse location.
+
+
+contextClick()
+--------------
+	Performs a context-click at the current mouse location. (Right Click Mouse Action) 
+
+
+doubleClick()
+--------------
+	Performs a double-click at the current mouse location. 
+
+
+dragAndDrop(source, target)
+----------------------------
+	Performs click-and-hold at the location of the source element, moves to the location of the target element, then releases the mouse.
+
+	Parameters:
+	source- element to emulate button down at.
+	target- element to move to and release the mouse at. 
+
+
+dragAndDropBy(source, x-offset, y-offset)
+------------------------------------------
+	Performs click-and-hold at the location of the source element, moves by a given offset, then releases the mouse.
+
+	Parameters:
+	source- element to emulate button down at.
+	xOffset- horizontal move offset.
+	yOffset- vertical move offset
+
+
+keyDown(modifier_key)
+---------------------
+	Performs a modifier key press. Does not release the modifier key - subsequent interactions may assume it's kept pressed.
+
+	Parameters:
+	modifier_key - any of the modifier keys (Keys.ALT, Keys.SHIFT, or Keys.CONTROL) 
+
+
+keyUp(modifier _key)
+---------------------
+	Performs a key release.
+
+	Parameters:
+	modifier_key - any of the modifier keys (Keys.ALT, Keys.SHIFT, or Keys.CONTROL) 
+
+
+
+moveByOffset(x-offset, y-offset)
+--------------------------------
+	Moves the mouse from its current position (or 0,0) by the given offset.
+
+	Parameters:
+
+	x-offset- horizontal offset. A negative value means moving the mouse left.
+	y-offset- vertical offset. A negative value means moving the mouse down. 
+
+
+
+moveToElement(toElement)
+-------------------------
+	Moves the mouse to the middle of the element. 
+
+	Parameters:
+	toElement- element to move to. 
+
+
+release()
+---------
+	Releases the depressed left mouse button at the current mouse location 
+
+
+sendKeys(onElement, charsequence)
+---------------------------------
+	Sends a series of keystrokes onto the element. 
+
+	Parameters:
+
+	onElement - element that will receive the keystrokes, usually a text field
+	charsequence - any string value representing the sequence of keystrokes to be sent 
+
+
+
+How to work with Actions classes:
+-----------------------------------
+
+	Step 1: Import the Actions and Action classes.
+	Step 2: Instantiate a new Actions object.  
+	Step 3: Instantiate an Action using the Actions object in step 2. 
+	Step 4: Use the perform() method when executing the Action object we designed in Step 3. 
+
+
+
+Example:
+---------
+
+	Actions builder = new Actions(driver);
+	Action mouseOverHome = builder.moveToElement(link_Home).build();
+
+
+
+Building a Series of Multiple Actions:
+--------------------------------------
+
+	Actions builder = new Actions(driver);
+	Action seriesOfActions = builder
+		.moveToElement(txtUsername)
+		.click()
+		.keyDown(txtUsername, Keys.SHIFT)
+		.sendKeys(txtUsername, "hello")
+		.keyUp(txtUsername, Keys.SHIFT)
+		.doubleClick(txtUsername)
+		.contextClick()
+		.build();
+	
+	seriesOfActions.perform() ;
+
+
+
+Summary :
+---------
+	Handling special keyboard and mouse events are done using the AdvancedUserInteractions API.
+	Frequently used Keyword and Mouse Events are doubleClick(), keyUp, dragAndDropBy, contextClick & sendKeys.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
